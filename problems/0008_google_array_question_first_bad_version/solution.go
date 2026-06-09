@@ -3,6 +3,11 @@ package p0008_google_array_question_first_bad_version
 // https://leetcode.com/problems/first-bad-version/
 // time complexity: O(log n), where n is the number of versions
 // space complexity: O(1)
+
+var badVersionChecker = func(version int) bool {
+	return version >= 4
+}
+
 func GoogleArrayQuestionFirstBadVersion(n int) int {
 	left, right := 1, n
 
@@ -23,5 +28,5 @@ func GoogleArrayQuestionFirstBadVersion(n int) int {
 }
 
 func isBadVersion(version int) bool {
-	return version >= 4
+	return badVersionChecker(version)
 }
