@@ -1,5 +1,8 @@
 package p0008_google_array_question_first_bad_version
 
+// https://leetcode.com/problems/first-bad-version/
+// time complexity: O(log n), where n is the number of versions
+// space complexity: O(1)
 func GoogleArrayQuestionFirstBadVersion(n int) int {
 	left, right := 1, n
 
